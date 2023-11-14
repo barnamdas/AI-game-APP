@@ -38,7 +38,7 @@ public class BinaryTreeGame
             {
                 case 'S':
                 case 's':
-                    bg.createTree("");
+                    bg.createTree("Game 1.txt");
                     bg.play(rootnode);
                     break;
                 case 'N':
@@ -52,7 +52,7 @@ public class BinaryTreeGame
                     System.out.println("2 - Traverse Game 2");
                     int c=in.nextInt();
                     if(c == 1)
-                        bg.createTree("");
+                        bg.createTree("Game 1.txt");
                     else
                         bg.createTree("Game 2.txt");
                     while(true)
@@ -99,7 +99,7 @@ public class BinaryTreeGame
         {
             //Open the file that contains the game
             File myObj;
-            if(fname == ""){
+            if(fname == "Game 1.txt"){
                 myObj = new File("Game 1.txt");
             }
             else
